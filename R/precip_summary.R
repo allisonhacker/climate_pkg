@@ -28,11 +28,4 @@ precip_summary = function(amt, type, snow_density = 0.312){
   return(as.list(precip_sum))
 }
 
-# precip_amounts = runif(min=0, max=10, n=50)
-# possible_precip = c("rain", "snow")
-# precip_types = sample(possible_precip, size=50, prob = c(0.8, 0.2), replace=T)
-# #
-# precip_data = data.frame(type = precip_types, amount = precip_amounts)
-# #
-# precip_summary(amt = precip_data$amount, type = precip_data$type)
 

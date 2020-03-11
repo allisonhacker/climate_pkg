@@ -37,13 +37,3 @@ fire_danger = function(fire_df){
   return(fire_danger_df)
 }
 
-# fire_danger(35, 25, 20, 72)
-
-# temps <- runif(min=60, max=110, n=50)
-# hums <- rnorm(n = 50, mean = 35, sd = 10)
-# winds <- runif(min=1, max=40, n=50)
-# fuels <- runif(min=50, max=100, n=50)
-#
-# fire_df <- data.frame(temp = temps, humidity = hums, wind_speed = winds, fuel_moisture = fuels)
-#
-# fire_danger(fire_df)
