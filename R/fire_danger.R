@@ -30,9 +30,9 @@ fire_danger = function(fire_df){
 
   fire_score= 0.2*temp_score + 0.3*humidity_score + 0.35*wind_score + 0.15*fuel_score
 
-  fire_danger_level= ifelse(fire_score > 3.75, "Extreme",
-                      ifelse(fire_score > 2.5, "High",
-                                    ifelse(fire_score> 1.25, "Moderate", "Low")))
+  fire_danger_level= ifelse(fire_score > 4, "Extreme",
+                      ifelse(fire_score > 3, "High",
+                                    ifelse(fire_score> 2, "Moderate", "Low")))
   fire_danger_df = data.frame(fire_score = fire_score, fire_danger_level = fire_danger_level)
   return(fire_danger_df)
 }
