@@ -10,7 +10,6 @@
 heat_records = function(temps, records){
   dif = temps-records
   record_high <- ifelse(dif>0, 1, 0)
-  print("Number of record highs")
   return(sum(record_high))
 }
 
