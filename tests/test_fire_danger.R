@@ -2,8 +2,10 @@
 
 test_that("fire_danger_works", {
   expect_length(fire_danger(fire_df), 2)
-  expect_true(nrow(fire_danger(fire_df)) > 0)
-  expect_true(sum(fire_danger(fire_df)$fire_score) > 0)
   })
 
-#test_that("")
+# Test for reasonable values
+
+expect_true(nrow(fire_danger(fire_df)) > 0)
+expect_true(sum(fire_danger(fire_df)$fire_score) > 0)
+
