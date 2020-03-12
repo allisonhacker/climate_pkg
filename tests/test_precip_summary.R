@@ -14,4 +14,9 @@ fake_precip_amt = c(5, 3, 6, 9)
 fake_precip_type = c("rain", "snow", "rain", "rain")
 
 # Test for accuracy
-expect_equal(precip_summary())
+
+test_that("precip_summary works correctly", {
+expect_equal(precip_summary(fake_precip_amt, fake_precip_type)$min, 3)
+expect_equal(precip_summary(fake_precip_amt, fake_precip_type)$max, 9)
+expect_equal(precip_summary(fake_precip_amt, fake_precip_type)$snowdays, 1)
+})
